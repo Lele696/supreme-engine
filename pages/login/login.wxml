@@ -1,0 +1,41 @@
+<view style="background: url('../../image/3651713275281_.pic.jpg') no-repeat 0 0; background-size:cover; width: 100%; height: 100%;">
+  <view style="clear: both; padding-bottom: 400rpx;"></view>
+  <view class="page-body" style="width: 80%; margin: 0 auto;">
+    <form bindsubmit="toMapPage">
+      <view class="page-section" style="padding-bottom: 10rpx;">
+        <view class="weui-cells__title"></view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="username" auto-focus placeholder="请输入账户" required />
+          </view>
+        </view>
+      </view>
+      <view class="page-section" style="padding-bottom: 10rpx;">
+        <view class="weui-cells__title"></view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="password" auto-focus placeholder="请输入密码" required />
+          </view>
+        </view>
+      </view>
+      <view class="page-section" style="padding-bottom: 10rpx;">
+        <view class="weui-cells__title"></view>
+        <view class="weui-cells weui-cells_after-title" style="position: relative;">
+          <view class="weui-cell weui-cell_input">
+            <input class="weui-input" name="code" auto-focus placeholder="请输入验证码" required />
+          </view>
+          <view style="position: absolute; top: 2px; right: 0;">
+            <image bindtap="reloadImg" src="{{'data:image/gif;base64,' + imgCode}}" style="width: 100px; height: 40px;"></image>
+          </view>
+        </view>
+      </view>
+      <view class="page-section" style="padding-bottom: 10rpx;">
+        <view class="weui-cells__title"></view>
+        <view style="margin: 10rpx auto 0;">
+          <button formType="submit" style="float: left; width: 280rpx;">登录</button>
+          <button bindtap="registry" style="float: right; width: 280rpx;">注册</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

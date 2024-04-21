@@ -1,0 +1,21 @@
+<view style="background: url('../../image/3651713275281_.pic.jpg') no-repeat 0 0; background-size:cover; width: 100%; height: 100%;">
+  <view style="clear: both; padding-bottom: 300rpx;"></view>
+  <view class="page-body" style="width: 80%; margin: 0 auto;">
+    <form bindsubmit="feedbackSubmit">
+      <view class="page-section" style="padding-bottom: 10rpx;">
+        <view class="weui-cells__title"></view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <textarea style="height: 400rpx;" style="padding-top: 20rpx;"  name="content" auto-focus placeholder="请输入内容" required />
+          </view>
+        </view>
+      </view>      
+      <view class="page-section" style="padding-bottom: 10rpx;">
+        <view class="weui-cells__title"></view>
+        <view style="margin: 10rpx auto 0;">
+          <button formType="submit">提交</button>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>
